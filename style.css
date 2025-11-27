@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section,
+.section *:not(p, div) {
+    font-family: "Henny Penny", cursive !important;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.section p,
+p {
+    font-family: "Slabo 13px", serif !important;
+    font-weight: bold;
+    font-size: 1.37rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: center;
+    word-wrap: break-word;
+    color: #835f96;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(90deg, rgba(70,39,95,1) 0%, rgba(10,34,56,1) 100%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 130px;
+    border-radius: 0 0 0 15px;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    color: #ddd0be;
+    font-family: "Henny Penny", cursive !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    background-color: #835f96;
+    color: #0C2B4E;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Slabo 13px", serif !important;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    opacity: 100;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #F4F4F4;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ddd0be;
+    transform: translateY(-2px);
+}
+
+.nav-links a:hover::after {
+    width: 60%;
+}
+
+.section {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: #ddd0be;
+    gap: 20px;
+    scroll-margin-top: 147px;
+}
+
+.section-img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 2.25rem;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.section a {
+    font-family: 'Libre Baskerville', serif;
+    color: #F4F4F4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: #533d1d;
+}
+
+#home {
+    background: linear-gradient(135deg, #46275F, #0A2238);
+}
+
+#home p {
+    margin-top: -10px;
+}
+
+#about {
+    background-image: linear-gradient(rgba(18,2,27,0.5), rgba(18,2,36,0.5)), url('images/sigma.png');
+    background-size: cover;
+    background-position: center;
+    color: #9a9cfa;
+    font-family: "Slabo, 13px", serif !important;
+}
+
+#about h3 {
+    font-family: "henny penny", serif !important;
+    margin-top: -15px;
+    font-size: 1.8rem;
+    text-shadow: 5px 5px 10px rgba(25, 9, 83, 0.45);
+}
+
+#about h2,
+#about p {
+    margin-top: -10px;
+    color: #ddd0be !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.team-names {
+    color: #ddd0be;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+    font-family: "Slabo 13px", serif !important; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -10px;
+    line-height: 1.6;
+}
+
+#share {
+    background-image: radial-gradient(circle, #46275f, #322959, #1f2850, #112645, #0a2238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#share a.share-link.Slabo-font {
+    font-family: "Slabo 13px", serif !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0A2238;
+    background: rgba(255,255,255,0.2);
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+#share a.share-link.Slabo-font:hover {
+    background: rgba(255,255,255,0.35);
+    color: #ddd0be;
+    transform: translateY(-2px);
+}
+
+#share p {
+    margin-top: -10px;
+}
+
+#socials {
+    background-image: linear-gradient(rgba(18, 2, 27, 0.5), rgba(18, 2, 36, 0.5)), url('images/tiktok.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ddd0be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+}
+
+#socials h2,
+#socials p {
+    margin-top: -10px;
+    color: #ddd0be !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.45);
+}
+
+#socials .social-link a img {
+    width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#socials .social-link a:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+#socials .social-link {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(70,39,95,1) 0%, rgba(10,34,56,1) 100%);
+    color: #F4F4F4;
+    font-family: "Slabo 13px", serif;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 80px;
+    }
+    .logo-text {
+        font-size: 1.8rem;
+    }
+    .nav-links li {
+        margin-left: 15px;
+    }
+}
